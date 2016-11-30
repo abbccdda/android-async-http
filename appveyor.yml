@@ -11,5 +11,6 @@ test_script:
   - echo nexusUsername=dummy > library\gradle.properties
   - echo nexusPassword=dummy > library\gradle.properties
   - gradlew.bat clean assemble check
+  - gradlew.bat :library:androidJavadocs
 
 build: off
